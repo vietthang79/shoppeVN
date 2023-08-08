@@ -72,8 +72,9 @@ a:hover {
 }
 
 .down-arrow {
-  background-color: #999999;
-  font-size: 18px; /* Có thể tùy chỉnh kích thước của mũi tên */
+  font-size: 18px;
+  margin-right: 5px;
+  /* Có thể tùy chỉnh kích thước của mũi tên */
 }
 
 .txt_USD {
