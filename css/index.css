@@ -1,0 +1,743 @@
+@font-face {
+    font-family: Poppins-Regular;
+    src: url("../fonts/poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url("../fonts/poppins/Poppins-Medium.ttf");
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url("../fonts/poppins/Poppins-Bold.ttf");
+}
+
+@font-face {
+    font-family: Poppins-SemiBold;
+    src: url("../fonts/poppins/Poppins-SemiBold.ttf");
+}
+
+@import url("https://fonts.cdnfonts.com/css/gilroy-bold");
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-family: "Gilroy-Medium", sans-serif;
+    font-size: 19px;
+    scroll-behavior: smooth;
+    background-color: #fafafa;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+    text-decoration: none;
+    color: aqua;
+}
+
+.container_navbar {
+    display: flex;
+    background-color: #f35327;
+}
+
+.span_tieude {
+    font-family: "Gilroy-Medium", sans-serif;
+    color: white;
+    padding: 20px 0px 20px 101px;
+}
+
+.signIn_nav {
+    font-family: "Gilroy-Medium", sans-serif;
+    color: white;
+    display: flex;
+    padding: 20px 0px 20px 657px;
+}
+
+.down-arrow {
+    font-size: 18px;
+    margin-right: 5px;
+    /* Có thể tùy chỉnh kích thước của mũi tên */
+}
+
+.txt_USD {
+    margin: 0px 10px 0px 10px;
+}
+
+.container_nav1 {
+    display: flex;
+    background-color: #fefefe;
+    width: 100%;
+    height: 90px;
+}
+
+.logo {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 30px;
+    margin: 15px 273px 0px 100px;
+}
+
+ul {
+    list-style: none;
+}
+
+.menu_lv1 a {
+    position: relative;
+    color: white;
+}
+
+.menu_lv1 .item_menu_lv1 {
+    display: inline-block;
+    transition: 0.6s;
+}
+
+.menu_lv1 .item_menu_lv1 .title_item_menu_lv1:hover {
+    font-weight: bold;
+}
+
+.menu_lv1 .item_menu_lv1 .title_item_menu_lv1 {
+    padding: 10px 20px;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.menu_lv2 {
+    position: absolute;
+    background-color: white;
+    display: none;
+    z-index: 20;
+}
+
+.menu_lv2 a {
+    color: #ddd;
+    display: block;
+    padding: 10px 20px;
+}
+
+.item_menu_lv1:hover .menu_lv2 {
+    display: block;
+    color: black;
+}
+
+.item_menu_lv2 a:hover {
+    background-color: rgb(212, 217, 215);
+    transition: 0.6s;
+}
+
+.item_menu_lv1 .title_item_menu_lv1 {
+    color: #3d3737;
+    font-size: 19px;
+    font-family: "Gilroy-Medium", sans-serif;
+    margin-top: 25px;
+    padding-left: 400px;
+    justify-items: center;
+}
+
+/* Reset các giá trị mặc định của input */
+input[type="search"] {
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    width: 301px;
+    outline: none;
+    font-size: 16px;
+    margin-left: -285px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Thiết lập chiều rộng và bề mặt nút tìm kiếm */
+button {
+    border: none;
+    background-color: #007bff;
+    /* Màu nền nút */
+    color: #ffffff;
+    /* Màu chữ nút */
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Thiết lập biểu tượng tìm kiếm bên trong nút */
+i.fa {
+    font-size: 25px;
+    margin-left: -50px;
+    opacity: 0.4;
+}
+
+/* Định dạng ô tìm kiếm */
+.search-container {
+    display: flex;
+    border: none;
+    align-items: center;
+    max-width: 500px;
+    /* Thiết lập chiều rộng tối đa của ô tìm kiếm */
+    margin: 0 auto;
+    /* Căn giữa ô tìm kiếm */
+}
+
+/* Reset giá trị mặc định của nút */
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* Thiết lập biểu tượng và số hàng hóa trong giỏ hàng */
+.cart-icon {
+    position: relative;
+    padding: 10px;
+    width: 54px;
+    border-radius: 20%;
+    background-color: #f6f6f6;
+    margin-left: -275px;
+}
+
+.ic_cart {
+    margin: 2px 0px 0px -6px;
+}
+
+.cart-items {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 17px;
+    background-color: red;
+    color: #fff;
+    border-radius: 50%;
+    padding: 1px;
+    font-size: 12px;
+}
+
+/* Thiết lập biểu tượng của nút danh sách */
+.list-button {
+    position: relative;
+    padding: 10px;
+    width: 54px;
+    border-radius: 20%;
+    background-color: #f6f6f6;
+    margin-left: -251px;
+}
+
+.list-button i.fa {
+    font-size: 30px;
+    color: black;
+    margin-left: -4px;
+}
+
+/* Thiết lập nút giỏ hàng và nút danh sách */
+.cart-button {
+    display: flex;
+    align-items: center;
+}
+
+/* Khoảng cách giữa hai nút */
+.list-button {
+    margin-left: 10px;
+}
+
+.line_bottom {
+    border-bottom: 2px solid #eeeeee;
+    width: 45%;
+    margin: 0px auto;
+}
+
+.slies {
+    display: flex;
+    align-items: center;
+}
+
+.l_content,
+.r_content_img {
+    flex: 5;
+    /* Chia đều không gian giữa phần tử bên trái và bên phải */
+    padding: 20px;
+    /* Tạo khoảng cách từ nội dung đến viền của phần tử */
+
+}
+
+.container_slides {
+    width: 100%;
+    background-color: #FFF1F0;
+    height: 560px;
+}
+
+.l_content_tittle {
+    color: #FA541C;
+    font-size: 32px;
+    font-family: "Gilroy-Medium", sans-serif;
+    letter-spacing: 2px;
+}
+
+.l_content_text {
+    color: #334155;
+    font-size: 24px;
+    line-height: 50px;
+    letter-spacing: 1px !important;
+}
+
+.r_content_img {
+    padding-left: 157px;
+}
+
+.l_content {
+    margin-left: 250px;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.l_content_nameSP {
+    font-size: 26px;
+    color: #3D3737;
+    line-height: 28.25px;
+    font-family: "Gilroy-Medium", sans-serif;
+}
+
+.l_content_price {
+    font-size: 26px;
+    color: #3D3737;
+    line-height: 28.25px;
+    font-family: "Gilroy-Medium", sans-serif;
+    padding-left: 40px;
+}
+
+.pay-now-button {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.pay-now-button button {
+    background-color: #f35327;
+    color: white;
+    font-size: 16px;
+    width: 156px;
+    height: 40px;
+    padding: 10px 20px;
+    border: none;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.pay-now-button button:hover {
+    background-color: #f03300;
+    /* Thay đổi màu khi hover */
+}
+
+.txt_tieude {
+    font-size: 25px;
+    margin: 33px 0px 8px 137px;
+    letter-spacing: 0.7px;
+}
+
+.line_bottom_right {
+    border-bottom: 2px solid #3d3737;
+    width: 5%;
+    margin: 10px 135px;
+}
+
+
+/* Style the product card container */
+.product_card {
+    width: 652px;
+    border-radius: 15px;
+    padding: 10px;
+    right: 40px;
+    background-color: #FFFFFF;
+    margin: 10px 137px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.text_left {
+    padding: 30px;
+    display: flex;
+
+    flex-direction: column;
+    gap: 20px;
+}
+
+.txt_f_name {
+    font-size: 27px;
+    line-height: 24px;
+    color: #3D3737;
+}
+
+.txt_l_name {
+    font-size: 27px;
+    line-height: 32px;
+    color: #334155;
+    font-weight: 700;
+}
+
+.txt_des {
+    font-size: 20px;
+    color: #85858A;
+    line-height: 27.2px;
+    font-weight: 200;
+    height: 50px;
+}
+
+.txt_price {
+    font-size: 27px;
+    color: #3D3737;
+    line-height: 28.25px;
+    font-weight: 600;
+    height: 50px;
+}
+
+
+.pay-now-button1 {
+    text-align: left;
+    margin-top: -20px;
+}
+
+.pay-now-button1 button {
+    background-color: #f35327;
+    color: white;
+    font-size: 16px;
+    width: 156px;
+    height: 40px;
+    padding: 10px 20px;
+    border: none;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.pay-now-button1 button:hover {
+    background-color: #f03300;
+    /* Thay đổi màu khi hover */
+}
+
+.r_images {
+    margin: 132px 0px 0px -144px;
+}
+
+.r_images_giay {
+    margin: 85px 0px 0px -144px;
+}
+
+.r_images_mu {
+    margin: 68px 0px 0px -94px;
+}
+
+.line_bottom_red {
+    border-bottom: 1px solid #f03300;
+    width: 35%;
+    margin: 55px auto;
+    margin-bottom: 30px;
+    margin-left: 138px;
+}
+
+.button2 {
+    border: 2px solid #FA541C;
+    font-size: 16px;
+    color: #FA541C;
+    border-radius: 10px;
+    padding: 20px;
+    width: 142px;
+    height: max-content;
+    margin-top: 21px;
+}
+
+.line_bottom_red2 {
+    border-bottom: 1px solid #f03300;
+    width: 35%;
+    margin: 55px auto;
+    margin-bottom: 30px;
+    margin-right: 138px;
+}
+
+
+
+
+/* Style the product image */
+.right_content img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Style the product name */
+.right_content h2 {
+    margin: 35px -18px 0px 13px;
+    color: #334155;
+    line-height: 18.83px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Style the product details */
+.right_content p {
+    margin: 15px -18px 0px 13px;
+    font-size: 20px;
+    color: #3D3737;
+}
+
+/* Style the product price */
+.right_content .price {
+    display: block;
+    margin: 20px 0px 0px 13px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Style the add to cart button */
+.right_content button {
+    width: 55px;
+    height: 55px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button_container_name {
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    background-color: #f6ffed;
+    gap: 6.04px;
+    padding: 10px;
+    border-radius: 30px;
+    width: 120px;
+    margin: 21px 0px 21px 49px;
+}
+
+.txt_des2 p,
+.txt_des2 {
+    color: #3D3737;
+    font-weight: 100;
+    font-size: 20px;
+    margin-left: 13px;
+}
+
+
+.button-container {
+    display: flex;
+    cursor: pointer;
+    gap: 6.04px;
+    margin: 16px 0px 0px 41px;
+}
+
+.button-container button {
+    border-radius: 50%;
+    width: 19.61px;
+    height: 19.61px;
+}
+
+
+/* Green button */
+.button-container .green {
+    background-color: #304a23;
+}
+
+/* Blue button */
+.button-container .blue {
+    background-color: #3d3737;
+}
+
+/* Yellow button */
+.button-container .yellow {
+    background-color: #af0303;
+}
+
+.color {
+    display: flex;
+}
+
+.l_images {
+    height: 280px;
+}
+
+
+/* Style the button */
+.color_button {
+    padding: 10px 20px;
+    font-size: 16px;
+    width: 100px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    background-image: linear-gradient(45deg, #ffa500, #ff6347);
+    color: #fff;
+    margin: -24px 0px 0px 223px;
+}
+
+/* Add animation to the button on hover */
+.color_button:hover {
+    animation: colorChange 1s infinite alternate;
+}
+
+@keyframes colorChange {
+    0% {
+        background-image: linear-gradient(45deg, #ffa500, #ff6347);
+    }
+
+    50% {
+        background-image: linear-gradient(45deg, #ff6347, #ffa500);
+    }
+
+    100% {
+        background-image: linear-gradient(45deg, #ffa500, #ff6347);
+    }
+}
+
+.right_content .color_button {
+    margin: -4px 0px 0px 235px;
+}
+
+
+.button-container_color {
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    background-color: #b5b5b533;
+    gap: 6.04px;
+    padding: 7.5px 7.5px 6.8px;
+    border-radius: 17px;
+    width: 120px;
+    margin: 9px 0px 0px 28px;
+  }
+
+
+.button-container_color button {
+    border-radius: 50%;
+    width: 19.61px;
+    height: 19.61px;
+  }
+  
+  /* Red button */
+  .button-container_color .red {
+    background-color: #ffffff;
+  }
+  
+  /* Green button */
+  .button-container_color .green {
+    background-color: #304a23;
+  }
+  
+  /* Blue button */
+  .button-container_color .blue {
+    background-color: #3d3737;
+  }
+  
+  /* Yellow button */
+  .button-container_color .yellow {
+    background-color: #af0303;
+  }
+
+  .footer {
+    margin-top: 51px;
+    padding-top: 24px;
+    background-color: #fff1f0;
+  }
+  .footer_wrapper {
+    margin-left: 107px;
+    display: flex;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #dad4d4;
+  }
+  .footer__col:first-child {
+    max-width: 424.25px;
+    margin-left: 10px;
+    margin-right: 50px;
+
+  }
+  .footer__col:first-child .footer_logo {
+    max-width: 239.45px;
+    height: 48.73px;
+    margin-left: 10px;
+  }
+  .footer__col:first-child .footer_logo > img {
+    width: 100%;
+    height: 100%;
+  }
+  .footer__col:first-child .footer__col-desc {
+    margin-top: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding: 0 10px;
+  }
+  .footer .more-info {
+    margin-left: 40px;
+    margin-right: 96px;
+  }
+  .footer .more-info > p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: left;
+  }
+  .footer .more-info .footer__moreInfo {
+    margin-top: 16px;
+  }
+  .footer .more-info .footer__moreInfo > ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    list-style: none;
+  }
+  .footer .more-info .footer__moreInfo > ul > li > a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #3d3737;
+    text-decoration: none;
+  }
+  .footer .about-us {
+    max-width: 424.25px;
+    width: 100%;
+    margin-left: 78px;
+  }
+  .footer_bottom {
+    padding-top: 36.5px;
+    padding-bottom: 59.6px;
+    padding-left: 131px;
+    display: flex;
+    align-items: center;
+  }
+  .footer_bottom-icon {
+    display: flex;
+    align-items: center;
+    gap: 19.52px;
+  }
+  .footer_bottom > p {
+    margin-left: auto;
+    padding-right: 66.25px;
+  }
+  .footer_bottom > p > span {
+    color: #fa541c;
+  }
+  .footer_bottom-pay {
+    margin-left: auto;
+  }

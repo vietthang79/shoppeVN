@@ -1,0 +1,738 @@
+@font-face {
+  font-family: Poppins-Regular;
+  src: url("../fonts/poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url("../fonts/poppins/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url("../fonts/poppins/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url("../fonts/poppins/Poppins-SemiBold.ttf");
+}
+
+@import url("https://fonts.cdnfonts.com/css/gilroy-bold");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Gilroy-Medium", sans-serif;
+  font-size: 19px;
+  scroll-behavior: smooth;
+  background-color: #fafafa;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+}
+
+a:hover {
+  text-decoration: none;
+  color: aqua;
+}
+
+.container_navbar {
+  display: flex;
+  background-color: #f35327;
+}
+
+.span_tieude {
+  font-family: "Gilroy-Medium", sans-serif;
+  color: white;
+  padding: 20px 0px 20px 101px;
+}
+
+.signIn_nav {
+  font-family: "Gilroy-Medium", sans-serif;
+  color: white;
+  display: flex;
+  padding: 20px 0px 20px 657px;
+}
+
+.down-arrow {
+  font-size: 18px;
+  /* Có thể tùy chỉnh kích thước của mũi tên */
+}
+
+.txt_USD {
+  margin: 0px 10px 0px 10px;
+}
+
+.container_nav1 {
+  display: flex;
+  background-color: #fefefe;
+  width: 100%;
+  height: 90px;
+}
+
+.logo {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 30px;
+  margin: 15px 273px 0px 100px;
+}
+
+ul {
+  list-style: none;
+}
+
+.menu_lv1 a {
+  position: relative;
+  color: white;
+}
+
+.menu_lv1 .item_menu_lv1 {
+  display: inline-block;
+  transition: 0.6s;
+}
+
+.menu_lv1 .item_menu_lv1 .title_item_menu_lv1:hover {
+  font-weight: bold;
+}
+
+.menu_lv1 .item_menu_lv1 .title_item_menu_lv1 {
+  padding: 10px 20px;
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.menu_lv2 {
+  position: absolute;
+  background-color: white;
+  display: none;
+  z-index: 20;
+}
+
+.menu_lv2 a {
+  color: #ddd;
+  display: block;
+  padding: 10px 20px;
+}
+
+.item_menu_lv1:hover .menu_lv2 {
+  display: block;
+  color: black;
+}
+
+.item_menu_lv2 a:hover {
+  background-color: rgb(212, 217, 215);
+  transition: 0.6s;
+}
+
+.item_menu_lv1 .title_item_menu_lv1 {
+  color: #3d3737;
+  font-size: 19px;
+  font-family: "Gilroy-Medium", sans-serif;
+  margin-top: 25px;
+  padding-left: 400px;
+  justify-items: center;
+}
+
+/* Reset các giá trị mặc định của input */
+input[type="search"] {
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  width: 301px;
+  outline: none;
+  font-size: 16px;
+  margin-left: -285px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Thiết lập chiều rộng và bề mặt nút tìm kiếm */
+button {
+  border: none;
+  background-color: #007bff;
+  /* Màu nền nút */
+  color: #ffffff;
+  /* Màu chữ nút */
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Thiết lập biểu tượng tìm kiếm bên trong nút */
+i.fa {
+  font-size: 25px;
+  margin-left: -50px;
+  opacity: 0.4;
+}
+
+/* Định dạng ô tìm kiếm */
+.search-container {
+  display: flex;
+  border: none;
+  align-items: center;
+  max-width: 500px;
+  /* Thiết lập chiều rộng tối đa của ô tìm kiếm */
+  margin: 0 auto;
+  /* Căn giữa ô tìm kiếm */
+}
+
+/* Reset giá trị mặc định của nút */
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Thiết lập biểu tượng và số hàng hóa trong giỏ hàng */
+.cart-icon {
+  position: relative;
+  padding: 10px;
+  width: 54px;
+  border-radius: 20%;
+  background-color: #f6f6f6;
+  margin-left: -275px;
+}
+
+.ic_cart {
+  margin: 2px 0px 0px -6px;
+}
+
+.cart-items {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 17px;
+  background-color: red;
+  color: #fff;
+  border-radius: 50%;
+  padding: 1px;
+  font-size: 12px;
+}
+
+/* Thiết lập biểu tượng của nút danh sách */
+.list-button {
+  position: relative;
+  padding: 10px;
+  width: 54px;
+  border-radius: 20%;
+  background-color: #f6f6f6;
+  margin-left: -251px;
+}
+
+.list-button i.fa {
+  font-size: 30px;
+  color: black;
+  margin-left: -4px;
+}
+
+/* Thiết lập nút giỏ hàng và nút danh sách */
+.cart-button {
+  display: flex;
+  align-items: center;
+}
+
+/* Khoảng cách giữa hai nút */
+.list-button {
+  margin-left: 10px;
+}
+
+.l_content {
+  width: 783px;
+  margin: 30px 0px 0px 100px;
+  height: 965px;
+  background: white;
+  border-radius: 5px;
+}
+
+.txt_filter {
+  font-weight: 500;
+  display: block;
+  color: black;
+}
+
+.ic_filter {
+  display: block;
+}
+
+.filter {
+  display: flex;
+  width: 400px;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+.txt_search {
+  padding: 10px 30px;
+}
+
+/* Định dạng ô tìm kiếm */
+.search-container_l_content {
+  display: flex;
+  border: none;
+  align-items: center;
+  max-width: 500px;
+  /* Thiết lập chiều rộng tối đa của ô tìm kiếm */
+  margin: 0 auto;
+  /* Căn giữa ô tìm kiếm */
+  padding: 20px 0px 0px 222px;
+}
+
+/* Reset các giá trị mặc định của input */
+input[type="search_l_content"] {
+  border: none;
+  border-radius: 15px;
+  padding: 20px;
+  width: 363px;
+  outline: none;
+  background-color: #fafafa;
+  font-size: 16px;
+  margin-left: -194px;
+}
+
+.Goi_y {
+  display: flex;
+}
+
+.btn_Iphone13 {
+  background-color: #fff8f6;
+  color: #f35327;
+  border-radius: 15px;
+  margin: 20px 0px 30px 30px;
+  padding: 10px;
+  display: flex;
+  border-bottom: 2px solid #f93600;
+}
+
+.ic_dauX {
+  display: block;
+  margin-left: 7px;
+}
+
+.line_bottom {
+  border-bottom: 2px solid #eeeeee;
+  width: 85%;
+  margin: 0px auto;
+}
+
+.name_Product {
+  margin: 20px 0px 0px 30px;
+}
+
+/* Style the checkbox container */
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  /* Thay đổi giá trị này để thay đổi khoảng cách giữa checkbox và văn bản */
+  margin: 20px 0px 12px 0px;
+  cursor: pointer;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+}
+
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  /* Thay đổi giá trị này để thay đổi khoảng cách giữa checkbox và văn bản */
+  margin: 20px 0px 27px 0px;
+  cursor: pointer;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+}
+
+/* Hide the default checkbox input */
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  /* Màu nền của checkbox khi chưa được chọn */
+  border-radius: 5px;
+  /* Để tạo hình tròn, hình chữ nhật hoặc hình vuông, thay đổi giá trị này */
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox-container:hover input~.checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, change the background color */
+.checkbox-container input:checked~.checkmark {
+  background-color: #2196f3;
+  /* Màu nền của checkbox khi được chọn */
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-container input:checked~.checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.Price {
+  margin: 20px 0px 20px 30px;
+}
+
+.border {
+  border: 2px solid rgb(223, 223, 223);
+  width: 80px;
+  height: 50px;
+  margin: 24px 0px 0px 20px;
+  border-radius: 5px;
+}
+
+.from {
+  display: flex;
+}
+
+.txt_quality {
+  text-align: center;
+  line-height: 50px;
+}
+
+.Status {
+  margin: 20px 0px 20px 30px;
+}
+
+.container {
+  display: flex;
+}
+
+.txt_tieude {
+  font-size: 25px;
+  margin: 33px 0px 8px 21px;
+  letter-spacing: 0.7px;
+}
+
+.line_bottom_right {
+  border-bottom: 2px solid #3d3737;
+  width: 8%;
+  margin: 10px 20px;
+}
+
+/* Style the product card container */
+.product_card {
+  width: 350px;
+  border-radius: 5px;
+  padding: 10px;
+  right: 40px;
+  margin: 10px 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+/* Style the product image */
+.product_card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Style the product name */
+.product_card h2 {
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+/* Style the product details */
+.product_card p {
+  margin-top: 5px;
+  font-size: 18px;
+  color: #777;
+}
+
+/* Style the product price */
+.product_card .price {
+  display: block;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Style the add to cart button */
+.product_card button {
+  width: 55px;
+  height: 55px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.color {
+  display: flex;
+}
+
+/* .bg_colors {
+  background-color: #B5B5B533;
+  width: 170px;
+  height: 40px;
+  margin: -5px 0px 0px 20px;
+  border-radius: 30px;
+} */
+
+.chiadeu {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-container {
+  justify-content: center;
+  display: flex;
+  cursor: pointer;
+  background-color: #b5b5b533;
+  gap: 6.04px;
+  padding: 7.5px 7.5px 6.8px;
+  border-radius: 17px;
+  width: 120px;
+  margin: -2px 0px 0px 10px;
+}
+
+.button-container button {
+  border-radius: 50%;
+  width: 19.61px;
+  height: 19.61px;
+}
+
+/* Red button */
+.button-container .red {
+  background-color: #ffffff;
+}
+
+/* Green button */
+.button-container .green {
+  background-color: #304a23;
+}
+
+/* Blue button */
+.button-container .blue {
+  background-color: #3d3737;
+}
+
+/* Yellow button */
+.button-container .yellow {
+  background-color: #af0303;
+}
+
+/* Style the button */
+.color_button {
+  padding: 10px 20px;
+  font-size: 16px;
+  width: 100px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  background-image: linear-gradient(45deg, #ffa500, #ff6347);
+  color: #fff;
+  margin: -24px 0px 0px 223px;
+}
+
+/* Add animation to the button on hover */
+.color_button:hover {
+  animation: colorChange 1s infinite alternate;
+}
+
+@keyframes colorChange {
+  0% {
+    background-image: linear-gradient(45deg, #ffa500, #ff6347);
+  }
+
+  50% {
+    background-image: linear-gradient(45deg, #ff6347, #ffa500);
+  }
+
+  100% {
+    background-image: linear-gradient(45deg, #ffa500, #ff6347);
+  }
+}
+
+.button_container_name {
+  justify-content: center;
+  display: flex;
+  cursor: pointer;
+  background-color: #f6ffed;
+  gap: 6.04px;
+  padding: 7.5px 7.5px 6.8px;
+  border-radius: 17px;
+  width: 120px;
+  margin: -2px 0px 0px 45px;
+}
+
+.product-list {
+  /* Các kiểu dáng cho danh sách sản phẩm */
+  margin-bottom: 20px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Kiểu dáng nút trang */
+.page {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 5px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Màu nền khi hover qua nút trang */
+.page:hover {
+  background-color: #f2f2f2;
+}
+
+/* Kiểu dáng nút Prev và Next */
+.prev,
+.next {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 5px;
+  text-decoration: none;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Màu nền khi hover qua nút Prev và Next */
+.prev:hover,
+.next:hover {
+  background-color: #dcdcdc;
+}
+
+
+.footer {
+  margin-top: 51px;
+  padding-top: 24px;
+  background-color: #fff1f0;
+}
+.footer_wrapper {
+  margin-left: 107px;
+  display: flex;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #dad4d4;
+}
+.footer__col:first-child {
+  max-width: 424.25px;
+  margin-left: 10px;
+  margin-right: 50px;
+
+}
+.footer__col:first-child .footer_logo {
+  max-width: 239.45px;
+  height: 48.73px;
+  margin-left: 10px;
+}
+.footer__col:first-child .footer_logo > img {
+  width: 100%;
+  height: 100%;
+}
+.footer__col:first-child .footer__col-desc {
+  margin-top: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding: 0 10px;
+}
+.footer .more-info {
+  margin-left: 40px;
+  margin-right: 96px;
+}
+.footer .more-info > p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+.footer .more-info .footer__moreInfo {
+  margin-top: 16px;
+}
+.footer .more-info .footer__moreInfo > ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  list-style: none;
+}
+.footer .more-info .footer__moreInfo > ul > li > a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #3d3737;
+  text-decoration: none;
+}
+.footer .about-us {
+  max-width: 424.25px;
+  width: 100%;
+  margin-left: 78px;
+}
+.footer_bottom {
+  padding-top: 36.5px;
+  padding-bottom: 59.6px;
+  padding-left: 131px;
+  display: flex;
+  align-items: center;
+}
+.footer_bottom-icon {
+  display: flex;
+  align-items: center;
+  gap: 19.52px;
+}
+.footer_bottom > p {
+  margin-left: auto;
+  padding-right: 66.25px;
+}
+.footer_bottom > p > span {
+  color: #fa541c;
+}
+.footer_bottom-pay {
+  margin-left: auto;
+}

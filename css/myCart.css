@@ -1,0 +1,582 @@
+@font-face {
+  font-family: Poppins-Regular;
+  src: url("../fonts/poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url("../fonts/poppins/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url("../fonts/poppins/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url("../fonts/poppins/Poppins-SemiBold.ttf");
+}
+
+@import url("https://fonts.cdnfonts.com/css/gilroy-bold");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Gilroy-Medium", sans-serif;
+  font-size: 19px;
+  scroll-behavior: smooth;
+  background-color: #fafafa;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+button {
+  margin: 0;
+  padding: 0;
+}
+
+a:hover {
+  text-decoration: none;
+  color: aqua;
+}
+
+.container_navbar {
+  display: flex;
+  background-color: #f35327;
+}
+
+.span_tieude {
+  font-family: "Gilroy-Medium", sans-serif;
+  color: white;
+  padding: 20px 0px 20px 101px;
+}
+
+.signIn_nav {
+  font-family: "Gilroy-Medium", sans-serif;
+  color: white;
+  display: flex;
+  padding: 20px 0px 20px 657px;
+}
+
+.down-arrow {
+  background-color: #999999;
+  font-size: 18px; /* Có thể tùy chỉnh kích thước của mũi tên */
+}
+
+.txt_USD {
+  margin: 0px 10px 0px 10px;
+}
+
+.container_nav1 {
+  display: flex;
+  background-color: #fefefe;
+  width: 100%;
+  height: 90px;
+}
+
+.logo {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 30px;
+  margin: 15px 273px 0px 100px;
+}
+
+ul {
+  list-style: none;
+}
+
+.menu_lv1 a {
+  position: relative;
+  color: white;
+}
+
+.menu_lv1 .item_menu_lv1 {
+  display: inline-block;
+  transition: 0.6s;
+}
+
+.menu_lv1 .item_menu_lv1 .title_item_menu_lv1:hover {
+  font-weight: bold;
+}
+
+.menu_lv1 .item_menu_lv1 .title_item_menu_lv1 {
+  padding: 10px 20px;
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.menu_lv2 {
+  position: absolute;
+  background-color: white;
+  display: none;
+  z-index: 20;
+}
+
+.menu_lv2 a {
+  color: #ddd;
+  display: block;
+  padding: 10px 20px;
+}
+
+.item_menu_lv1:hover .menu_lv2 {
+  display: block;
+  color: black;
+}
+
+.item_menu_lv2 a:hover {
+  background-color: rgb(212, 217, 215);
+  transition: 0.6s;
+}
+
+.item_menu_lv1 .title_item_menu_lv1 {
+  color: #3d3737;
+  font-size: 19px;
+  font-family: "Gilroy-Medium", sans-serif;
+  margin-top: 25px;
+  padding-left: 400px;
+  justify-items: center;
+}
+
+/* Reset các giá trị mặc định của input */
+input[type="search"] {
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  width: 301px;
+  outline: none;
+  font-size: 16px;
+  margin-left: -285px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Thiết lập chiều rộng và bề mặt nút tìm kiếm */
+button {
+  border: none;
+  background-color: #007bff; /* Màu nền nút */
+  color: #ffffff; /* Màu chữ nút */
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Thiết lập biểu tượng tìm kiếm bên trong nút */
+i.fa {
+  font-size: 25px;
+  margin-left: -50px;
+  opacity: 0.4;
+}
+
+/* Định dạng ô tìm kiếm */
+.search-container {
+  display: flex;
+  border: none;
+  align-items: center;
+  max-width: 500px; /* Thiết lập chiều rộng tối đa của ô tìm kiếm */
+  margin: 0 auto; /* Căn giữa ô tìm kiếm */
+}
+
+/* Reset giá trị mặc định của nút */
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Thiết lập biểu tượng và số hàng hóa trong giỏ hàng */
+.cart-icon {
+  position: relative;
+  padding: 10px;
+  width: 54px;
+  border-radius: 20%;
+  background-color: #f6f6f6;
+  margin-left: -275px;
+}
+
+.ic_cart {
+  margin: 2px 0px 0px -6px;
+}
+
+.cart-items {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 17px;
+  background-color: red;
+  color: #fff;
+  border-radius: 50%;
+  padding: 1px;
+  font-size: 12px;
+}
+
+/* Thiết lập biểu tượng của nút danh sách */
+.list-button {
+  position: relative;
+  padding: 10px;
+  width: 54px;
+  border-radius: 20%;
+  background-color: #f6f6f6;
+  margin-left: -251px;
+}
+
+.list-button i.fa {
+  font-size: 30px;
+  color: black;
+  margin-left: -4px;
+}
+
+/* Thiết lập nút giỏ hàng và nút danh sách */
+.cart-button {
+  display: flex;
+  align-items: center;
+}
+
+/* Khoảng cách giữa hai nút */
+.list-button {
+  margin-left: 10px;
+}
+
+.l_content {
+  float: right;
+  width: 30%;
+  height: 965px;
+  background: white;
+  border-radius: 5px;
+  margin-right: 100px; /* Đặt khoảng cách giữa .l_content và cạnh bên phải của màn hình */
+}
+
+.txt_filter {
+  font-weight: 500;
+  display: block;
+  color: black;
+}
+.ic_filter {
+  display: block;
+}
+.filter {
+  display: flex;
+  width: 400px;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+.txt_search {
+  padding: 10px 30px;
+}
+
+/* Định dạng ô tìm kiếm */
+.search-container_l_content {
+  display: flex;
+  border: none;
+  align-items: center;
+  max-width: 500px; /* Thiết lập chiều rộng tối đa của ô tìm kiếm */
+  margin: 0 auto; /* Căn giữa ô tìm kiếm */
+  padding: 20px 0px 0px 222px;
+}
+
+.container_header {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Chia container thành hai cột bằng nhau */
+  gap: 920px; /* Khoảng cách giữa hai cột */
+}
+.mycart_title {
+  text-align: center;
+  font-size: 25px;
+  margin: 20px; /* Khoảng cách giữa hai chữ */
+}
+
+.line_bottom {
+  border-bottom: 2px solid #eeeeee;
+  width: 86%;
+  margin: 0 auto;
+}
+
+/* Style the product card container */
+.product_card {
+  width: 1000px;
+  border-radius: 25px;
+  padding: 20px;
+  margin-top: 20px;
+  margin: 20px 120px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+/* Style the product image */
+.product_card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Style the product name */
+.product_card h2 {
+  margin: 14px 0px 0px -51px;
+  font-size: 25px;
+}
+
+/* Style the product details */
+.product_card p {
+  margin: 10px 0px 0px -125px;
+
+  font-size: 18px;
+  color: #777;
+}
+
+/* Style the product price */
+.product_card .price {
+  display: block;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Style the add to cart button */
+.product_card button {
+  width: 55px;
+  height: 55px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tenSP {
+  color: #334155;
+  font-weight: 100;
+  font-size: 16px;
+}
+.product {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.product-name {
+  flex: 1;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-value {
+  margin: 0 10px;
+}
+.price {
+  text-align: center;
+  line-height: 70px;
+  justify-content: center;
+}
+.text {
+  text-align: center;
+  margin: 5px; /* Khoảng cách giữa hai phần tử */
+}
+
+.Cart {
+  display: flex;
+}
+.r_content {
+  width: 30%;
+  height: 590px;
+  background: white;
+  border-radius: 5px;
+  border-radius: 5px;
+  margin: 20px 0px 20px -85px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.name_Product {
+  margin: 20px 0px 0px 30px;
+}
+.txt_filter {
+  color: #3d3737;
+  letter-spacing: 2px;
+  font-size: 24px;
+  margin: 0px 0px 25px 8px;
+}
+.txt_money {
+  margin-bottom: 30px;
+}
+
+.txt_total {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Chia container thành hai cột bằng nhau */
+  gap: 149px; /* Khoảng cách giữa hai cột */
+}
+.txt_total p {
+  text-align: center;
+  color: #3d3737;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.txt_Discount {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Chia container thành hai cột bằng nhau */
+  gap: 225px; /* Khoảng cách giữa hai cột */
+}
+.txt_Discount p {
+  text-align: center;
+  color: #3d3737;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.txt_note {
+  margin: 30px 0px 5px 43px;
+  color: #3d3737;
+}
+
+
+.note-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.note-content {
+    width: 87%;
+    height: 150px;
+    font-size: 16px;
+    color: #666666;
+    line-height: 1.6;
+    resize: none;
+    border: 2px solid #eeeeee;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+    margin: 0 auto; /* Thêm thuộc tính này để căn giữa văn bản trong khung */
+    display: block; /* Đảm bảo rằng textarea là một phần tử block */
+}
+
+
+.note-content::placeholder {
+    color: #999999;
+}
+
+.pay-now-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pay-now-button button {
+    background-color: #f35327;
+    color: white;
+    font-size: 20px;
+    width: 87%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.pay-now-button button:hover {
+    background-color: #f03300; /* Thay đổi màu khi hover */
+}
+
+
+.footer {
+  margin-top: 51px;
+  padding-top: 24px;
+  background-color: #fff1f0;
+}
+.footer_wrapper {
+  margin-left: 107px;
+  display: flex;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #dad4d4;
+}
+.footer__col:first-child {
+  max-width: 424.25px;
+  margin-left: 10px;
+  margin-right: 50px;
+
+}
+.footer__col:first-child .footer_logo {
+  max-width: 239.45px;
+  height: 48.73px;
+  margin-left: 10px;
+}
+.footer__col:first-child .footer_logo > img {
+  width: 100%;
+  height: 100%;
+}
+.footer__col:first-child .footer__col-desc {
+  margin-top: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding: 0 10px;
+}
+.footer .more-info {
+  margin-left: 40px;
+  margin-right: 96px;
+}
+.footer .more-info > p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+.footer .more-info .footer__moreInfo {
+  margin-top: 16px;
+}
+.footer .more-info .footer__moreInfo > ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  list-style: none;
+}
+.footer .more-info .footer__moreInfo > ul > li > a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #3d3737;
+  text-decoration: none;
+}
+.footer .about-us {
+  max-width: 424.25px;
+  width: 100%;
+  margin-left: 78px;
+}
+.footer_bottom {
+  padding-top: 36.5px;
+  padding-bottom: 59.6px;
+  padding-left: 131px;
+  display: flex;
+  align-items: center;
+}
+.footer_bottom-icon {
+  display: flex;
+  align-items: center;
+  gap: 19.52px;
+}
+.footer_bottom > p {
+  margin-left: auto;
+  padding-right: 66.25px;
+}
+.footer_bottom > p > span {
+  color: #fa541c;
+}
+.footer_bottom-pay {
+  margin-left: auto;
+}
+
+  
